@@ -1,0 +1,74 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url('../img/background-image-about.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4500;
+}
+
+#aboutus {
+  padding: 50px 0;
+  color: #333;
+}
+
+#aboutus h2 {
+  color: #ff4500;
+}
+
+#aboutus p {
+  line-height: 1.6;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.about-content{
+  line-height: 1.6;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+footer {
+  background-color: rgba(53, 53, 53, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  bottom: 0;
+  width: 100%;
+}

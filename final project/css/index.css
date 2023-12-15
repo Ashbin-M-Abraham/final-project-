@@ -1,0 +1,173 @@
+/* Base styles for the entire page */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* H1 styles */
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Navigation styles */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4500;
+}
+
+/* Hero section styles */
+
+#hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#background-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/* Button styles */
+
+.btn {
+  background-color: #ff4500;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: black;
+  transform: translateY(-2px);
+}
+
+/* Footer styles */
+
+footer {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Outer container styles (for content layout) */
+
+.outer-container {
+  width: 100%;
+  padding: 60px 122px;
+}
+
+/* Content container styles */
+
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Image container styles */
+
+.image-container img {
+  width: 100%;
+  max-width: 612px;
+  height: auto;
+}
+
+/* Text container styles */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.date,
+.read-more {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #202020;
+}
+
+.text-container h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* Read more button styles */
+
+.read-more {
+  padding: 16px 60px;
+  border: 1px solid #CBCBCA;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .outer-container {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .outer-container {
+    padding: 60px 122px;
+  }
+}

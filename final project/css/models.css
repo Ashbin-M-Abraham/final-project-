@@ -1,0 +1,205 @@
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "model1img model1desc"
+        "model2desc model2img"
+        "model3img model3desc"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
+}
+.logo-link {
+    display: inline-block;
+    margin-right: auto;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+header, footer {
+    grid-area: header;
+    padding: 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+}
+.models{
+    width: 200%;
+}
+.model{
+    display: flex;
+}
+.model:nth-child(1) {
+    grid-area: model1;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.model:nth-child(1) > .model-img {
+    grid-area: model1img;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model:nth-child(1) > .model-desc {
+    grid-area: model1desc;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: #333;
+}
+
+.model:nth-child(2) {
+    grid-area: model2;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.model:nth-child(2) > .model-desc {
+    grid-area: model2desc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: #333;
+}
+
+.model:nth-child(2) > .model-img {
+    grid-area: model2img;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model:nth-child(3) {
+    grid-area: model3;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.model:nth-child(3) > .model-img {
+    grid-area: model3img;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model:nth-child(3) > .model-desc {
+    grid-area: model3desc;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: #333;
+}
+
+.model-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.model-desc p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, footer {
+    background-color: #101010;
+    color: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header"
+            "model1img"
+            "model1desc"
+            "model2desc"
+            "model2img"
+            "model3img"
+            "model3desc"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .model {
+        grid-template-columns: 1fr;
+    }
+}
+.buy-now-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.buy-now-btn .rect {
+    stroke-dasharray: 290;
+    stroke-dashoffset: 290;
+    transition: stroke-dashoffset 1s;
+}
+
+.buy-now-btn:hover .rect {
+    stroke-dashoffset: 0;
+    stroke: red;
+}
+
+.buy-now-btn text {
+    pointer-events: none; /
+}
